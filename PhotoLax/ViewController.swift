@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         
         for item in items {
             if item.hasPrefix("phlx") {
-            
+                pictures.append(item)
             }
         }
     }
