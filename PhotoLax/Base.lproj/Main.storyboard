@@ -47,6 +47,38 @@
             </objects>
             <point key="canvasLocation" x="1021.6" y="146.17691154422789"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Uy7-Ne-Roq">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="xOz-t5-IWD" customClass="DetailViewController" customModule="PhotoLax" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XxL-bn-hBx"/>
+                        <viewControllerLayoutGuide type="bottom" id="L5Y-FD-rCy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mS4-OE-deY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u9s-xM-11u">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="u9s-xM-11u" secondAttribute="trailing" id="P7d-5s-mMO"/>
+                            <constraint firstItem="u9s-xM-11u" firstAttribute="leading" secondItem="mS4-OE-deY" secondAttribute="leading" id="VM0-Bn-bRy"/>
+                            <constraint firstItem="u9s-xM-11u" firstAttribute="bottom" secondItem="L5Y-FD-rCy" secondAttribute="top" id="ns7-D4-zBx"/>
+                            <constraint firstItem="u9s-xM-11u" firstAttribute="top" secondItem="mS4-OE-deY" secondAttribute="top" id="qC6-NI-7oZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="u9s-xM-11u" id="U7Q-0F-zCj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oq1-TT-Syq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757.5999999999999" y="146.17691154422789"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Ql-yD-o3M">
             <objects>
