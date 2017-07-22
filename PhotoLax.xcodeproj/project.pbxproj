@@ -336,6 +336,7 @@
 				3112DB1B1F20230E00D7808C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
