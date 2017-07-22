@@ -15,7 +15,7 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Storm Viewer"
+        title = "PhotoLax"
         
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
