@@ -17,6 +17,8 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         title = selectedImage
+        //put the button in the nav bar
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
 
         if let imageToLoad = selectedImage {
             imageView.image = UIImage(named: imageToLoad)
@@ -31,6 +33,14 @@ class DetailViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.hidesBarsOnTap = false
+    }
+    //This code let me add the option to share pictures
+    func shareTapped() {
+        
+        let vc = UIActivityViewController(activityItems: [imageView.image!], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
+        
     }
 
     override func didReceiveMemoryWarning() {
